@@ -1,0 +1,146 @@
+2019-11-06 14:33:54 INFO  ConsoleApp:579 - Reading file: Data
+2019-11-06 14:33:54 INFO  ConsoleApp:604 - Reading file: Counts
+2019-11-06 14:33:58 INFO  ConsoleApp:170 - Command: -list all
+2019-11-06 14:34:06 INFO  ConsoleApp:527 - Command: -connect db
+2019-11-06 14:34:07 INFO  ConsoleApp:531 - IP: -connect db
+2019-11-06 14:34:07 INFO  ConsoleApp:533 - default ip: 100.103.231.218
+2019-11-06 14:34:07 INFO  DBConnectionClass:71 - Connecting to jdbc:postgresql://100.103.231.218:5432
+2019-11-06 14:34:07 INFO  DBConnectionClass:38 - Connecting to jdbc:postgresql://100.103.231.218:5432
+2019-11-06 14:34:07 INFO  DBConnectionClass:41 - Selecting databases from Server
+2019-11-06 14:34:07 INFO  DBConnectionClass:56 - Connecting to jdbc:postgresql://100.103.231.218:5432/simplebugtrackerdb
+2019-11-06 14:34:07 INFO  DBConnectionClass:71 - Connecting to jdbc:postgresql://100.103.231.218:5432/simplebugtrackerdb
+2019-11-06 14:34:14 INFO  ConsoleApp:238 - Command: -add project 
+2019-11-06 14:34:17 INFO  ConsoleApp:241 - Add new project: asdfasdfasd
+2019-11-06 14:34:17 INFO  ConsoleApp:247 - Add new project in DB: asdfasdfasd id = 11
+2019-11-06 14:34:17 INFO  ConsoleApp:590 - Creating file: Counts
+2019-11-06 14:34:17 INFO  ConsoleApp:569 - Creating file: Data
+2019-11-06 18:48:27 INFO  ConsoleApp:579 - Reading file: Data
+2019-11-06 18:48:27 INFO  ConsoleApp:604 - Reading file: Counts
+2019-11-06 18:48:31 INFO  ConsoleApp:527 - Command: -connect db
+2019-11-06 18:48:32 INFO  ConsoleApp:531 - IP: -connect db
+2019-11-06 18:48:32 INFO  ConsoleApp:533 - default ip: 100.103.231.218
+2019-11-06 18:48:32 INFO  DBConnectionClass:71 - Connecting to jdbc:postgresql://100.103.231.218:5432
+2019-11-06 18:48:32 INFO  DBConnectionClass:38 - Connecting to jdbc:postgresql://100.103.231.218:5432
+2019-11-06 18:48:32 INFO  DBConnectionClass:41 - Selecting databases from Server
+2019-11-06 18:48:32 INFO  DBConnectionClass:223 - Creatin tables in simplebugtrackerdb
+2019-11-06 18:48:33 INFO  DBConnectionClass:71 - Connecting to jdbc:postgresql://100.103.231.218:5432/simplebugtrackerdb
+2019-11-06 18:48:37 INFO  ConsoleApp:553 - Command: -save db
+2019-11-06 18:48:37 ERROR Main:22 - SQLException: 
+org.postgresql.util.PSQLException: Индекс колонки вне диапазона: 4, число колонок: 3.
+	at org.postgresql.core.v3.SimpleParameterList.bind(SimpleParameterList.java:53)
+	at org.postgresql.core.v3.SimpleParameterList.setStringParameter(SimpleParameterList.java:118)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.bindString(AbstractJdbc2Statement.java:2188)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.setString(AbstractJdbc2Statement.java:1304)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.setString(AbstractJdbc2Statement.java:1290)
+	at PostgresDB.DBConnectionClass.saveDatatoDB(DBConnectionClass.java:150)
+	at ConsoleApp.handleSaveDBCommand(ConsoleApp.java:556)
+	at ConsoleApp.<init>(ConsoleApp.java:153)
+	at Main.main(Main.java:16)
+2019-11-06 18:49:22 INFO  ConsoleApp:579 - Reading file: Data
+2019-11-06 18:49:22 INFO  ConsoleApp:604 - Reading file: Counts
+2019-11-06 18:49:28 INFO  ConsoleApp:527 - Command: -connect db
+2019-11-06 18:49:37 INFO  ConsoleApp:531 - IP: -connect db
+2019-11-06 18:49:37 INFO  ConsoleApp:533 - default ip: 100.103.231.218
+2019-11-06 18:49:38 INFO  DBConnectionClass:71 - Connecting to jdbc:postgresql://100.103.231.218:5432
+2019-11-06 18:49:38 INFO  DBConnectionClass:38 - Connecting to jdbc:postgresql://100.103.231.218:5432
+2019-11-06 18:49:38 INFO  DBConnectionClass:41 - Selecting databases from Server
+2019-11-06 18:49:38 INFO  DBConnectionClass:56 - Connecting to jdbc:postgresql://100.103.231.218:5432/simplebugtrackerdb
+2019-11-06 18:49:38 INFO  DBConnectionClass:71 - Connecting to jdbc:postgresql://100.103.231.218:5432/simplebugtrackerdb
+2019-11-06 18:49:49 INFO  ConsoleApp:553 - Command: -save db
+2019-11-06 18:49:49 ERROR Main:22 - SQLException: 
+org.postgresql.util.PSQLException: Cannot commit when autoCommit is enabled.
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.commit(AbstractJdbc2Connection.java:705)
+	at PostgresDB.DBConnectionClass.saveDatatoDB(DBConnectionClass.java:165)
+	at ConsoleApp.handleSaveDBCommand(ConsoleApp.java:556)
+	at ConsoleApp.<init>(ConsoleApp.java:153)
+	at Main.main(Main.java:16)
+2019-11-06 18:50:22 INFO  ConsoleApp:579 - Reading file: Data
+2019-11-06 18:50:22 INFO  ConsoleApp:604 - Reading file: Counts
+2019-11-06 18:50:26 INFO  ConsoleApp:527 - Command: -connect db
+2019-11-06 18:50:27 INFO  ConsoleApp:531 - IP: -connect db
+2019-11-06 18:50:27 INFO  ConsoleApp:533 - default ip: 100.103.231.218
+2019-11-06 18:50:27 INFO  DBConnectionClass:71 - Connecting to jdbc:postgresql://100.103.231.218:5432
+2019-11-06 18:50:27 INFO  DBConnectionClass:38 - Connecting to jdbc:postgresql://100.103.231.218:5432
+2019-11-06 18:50:27 INFO  DBConnectionClass:41 - Selecting databases from Server
+2019-11-06 18:50:28 INFO  DBConnectionClass:56 - Connecting to jdbc:postgresql://100.103.231.218:5432/simplebugtrackerdb
+2019-11-06 18:50:28 INFO  DBConnectionClass:71 - Connecting to jdbc:postgresql://100.103.231.218:5432/simplebugtrackerdb
+2019-11-06 18:50:31 INFO  ConsoleApp:553 - Command: -save db
+2019-11-06 18:50:31 INFO  ConsoleApp:569 - Creating file: Data
+2019-11-06 18:50:31 INFO  ConsoleApp:590 - Creating file: Counts
+2019-11-06 19:04:32 INFO  ConsoleApp:579 - Reading file: Data
+2019-11-06 19:04:32 INFO  ConsoleApp:604 - Reading file: Counts
+2019-11-06 19:04:36 INFO  ConsoleApp:527 - Command: -connect db
+2019-11-06 19:04:37 INFO  ConsoleApp:531 - IP: -connect db
+2019-11-06 19:04:37 INFO  ConsoleApp:533 - default ip: 100.103.231.218
+2019-11-06 19:04:37 INFO  DBConnectionClass:71 - Connecting to jdbc:postgresql://100.103.231.218:5432
+2019-11-06 19:04:37 INFO  DBConnectionClass:38 - Connecting to jdbc:postgresql://100.103.231.218:5432
+2019-11-06 19:04:37 INFO  DBConnectionClass:41 - Selecting databases from Server
+2019-11-06 19:04:37 INFO  DBConnectionClass:56 - Connecting to jdbc:postgresql://100.103.231.218:5432/simplebugtrackerdb
+2019-11-06 19:04:37 INFO  DBConnectionClass:71 - Connecting to jdbc:postgresql://100.103.231.218:5432/simplebugtrackerdb
+2019-11-06 19:04:44 INFO  ConsoleApp:553 - Command: -save db
+2019-11-06 19:04:44 INFO  ConsoleApp:569 - Creating file: Data
+2019-11-06 19:04:44 INFO  ConsoleApp:590 - Creating file: Counts
+2019-11-06 19:17:02 INFO  ConsoleApp:579 - Reading file: Data
+2019-11-06 19:17:02 INFO  ConsoleApp:604 - Reading file: Counts
+2019-11-06 19:17:07 INFO  ConsoleApp:527 - Command: -connect db
+2019-11-06 19:17:07 INFO  ConsoleApp:531 - IP: -connect db
+2019-11-06 19:17:07 INFO  ConsoleApp:533 - default ip: 100.103.231.218
+2019-11-06 19:17:07 INFO  DBConnectionClass:74 - Connecting to jdbc:postgresql://100.103.231.218:5432
+2019-11-06 19:17:08 INFO  DBConnectionClass:41 - Connecting to jdbc:postgresql://100.103.231.218:5432
+2019-11-06 19:17:08 INFO  DBConnectionClass:44 - Selecting databases from Server
+2019-11-06 19:17:08 INFO  DBConnectionClass:59 - Connecting to jdbc:postgresql://100.103.231.218:5432/simplebugtrackerdb
+2019-11-06 19:17:08 INFO  DBConnectionClass:74 - Connecting to jdbc:postgresql://100.103.231.218:5432/simplebugtrackerdb
+2019-11-06 19:17:11 INFO  ConsoleApp:553 - Command: -save db
+2019-11-06 19:17:11 INFO  ConsoleApp:569 - Creating file: Data
+2019-11-06 19:17:11 INFO  ConsoleApp:590 - Creating file: Counts
+2019-11-06 19:27:44 INFO  ConsoleApp:582 - Reading file: Data
+2019-11-06 19:27:44 INFO  ConsoleApp:607 - Reading file: Counts
+2019-11-06 19:29:31 INFO  ConsoleApp:582 - Reading file: Data
+2019-11-06 19:29:31 INFO  ConsoleApp:607 - Reading file: Counts
+2019-11-06 19:29:34 INFO  ConsoleApp:530 - Command: -connect db
+2019-11-06 19:29:35 INFO  ConsoleApp:534 - IP: -connect db
+2019-11-06 19:29:35 INFO  ConsoleApp:536 - default ip: 100.103.231.218
+2019-11-06 19:29:35 INFO  DBConnectionClass:78 - Connecting to jdbc:postgresql://100.103.231.218:5432
+2019-11-06 19:29:35 INFO  DBConnectionClass:45 - Connecting to jdbc:postgresql://100.103.231.218:5432
+2019-11-06 19:29:35 INFO  DBConnectionClass:48 - Selecting databases from Server
+2019-11-06 19:29:35 INFO  DBConnectionClass:220 - Creatin tables in simplebugtrackerdb
+2019-11-06 19:29:37 INFO  DBConnectionClass:78 - Connecting to jdbc:postgresql://100.103.231.218:5432/simplebugtrackerdb
+2019-11-06 19:29:42 INFO  ConsoleApp:556 - Command: -save db
+2019-11-06 19:29:42 INFO  ConsoleApp:572 - Creating file: Data
+2019-11-06 19:29:42 INFO  ConsoleApp:593 - Creating file: Counts
+2019-11-06 19:30:22 INFO  ConsoleApp:238 - Command: -add project
+2019-11-06 19:30:26 INFO  ConsoleApp:241 - Add new project: qweqweqweqweqwe
+2019-11-06 19:30:26 INFO  ConsoleApp:247 - Add new project in DB: qweqweqweqweqwe id = 11
+2019-11-06 19:30:26 INFO  ConsoleApp:593 - Creating file: Counts
+2019-11-06 19:30:26 INFO  ConsoleApp:572 - Creating file: Data
+2019-11-06 19:31:07 INFO  ConsoleApp:556 - Command: -save db
+2019-11-06 19:31:07 INFO  ConsoleApp:572 - Creating file: Data
+2019-11-06 19:31:07 INFO  ConsoleApp:593 - Creating file: Counts
+2019-11-06 19:31:31 INFO  ConsoleApp:170 - Command: -list all
+2019-11-06 19:32:33 INFO  ConsoleApp:582 - Reading file: Data
+2019-11-06 19:32:33 INFO  ConsoleApp:572 - Creating file: Data
+2019-11-06 19:32:33 INFO  ConsoleApp:593 - Creating file: Counts
+2019-11-06 19:32:33 INFO  ConsoleApp:622 - Filling array
+2019-11-06 19:32:38 INFO  ConsoleApp:530 - Command: -connect db
+2019-11-06 19:32:39 INFO  ConsoleApp:534 - IP: -connect db
+2019-11-06 19:32:39 INFO  ConsoleApp:536 - default ip: 100.103.231.218
+2019-11-06 19:32:39 INFO  DBConnectionClass:78 - Connecting to jdbc:postgresql://100.103.231.218:5432
+2019-11-06 19:32:39 INFO  DBConnectionClass:45 - Connecting to jdbc:postgresql://100.103.231.218:5432
+2019-11-06 19:32:39 INFO  DBConnectionClass:48 - Selecting databases from Server
+2019-11-06 19:32:39 INFO  DBConnectionClass:63 - Connecting to jdbc:postgresql://100.103.231.218:5432/simplebugtrackerdb
+2019-11-06 19:32:39 INFO  DBConnectionClass:78 - Connecting to jdbc:postgresql://100.103.231.218:5432/simplebugtrackerdb
+2019-11-06 19:32:43 INFO  ConsoleApp:556 - Command: -save db
+2019-11-06 19:32:43 INFO  ConsoleApp:572 - Creating file: Data
+2019-11-06 19:32:43 INFO  ConsoleApp:593 - Creating file: Counts
+2019-11-06 19:33:02 INFO  ConsoleApp:238 - Command: -add project
+2019-11-06 19:33:03 INFO  ConsoleApp:241 - Add new project: 123123123
+2019-11-06 19:33:03 INFO  ConsoleApp:247 - Add new project in DB: 123123123 id = 7
+2019-11-06 19:33:04 INFO  ConsoleApp:593 - Creating file: Counts
+2019-11-06 19:33:04 INFO  ConsoleApp:572 - Creating file: Data
+2020-02-24 11:29:13 INFO  ConsoleApp:582 - Reading file: Data
+2020-02-24 11:29:13 INFO  ConsoleApp:607 - Reading file: Counts
+2020-02-24 11:29:22 INFO  ConsoleApp:193 - Command: -help
+2020-02-24 11:29:43 INFO  ConsoleApp:222 - Command: -guide
+2020-02-24 11:29:53 INFO  ConsoleApp:170 - Command: -list all
+2020-02-26 18:37:49 INFO  ConsoleApp:582 - Reading file: Data
+2020-02-26 18:37:50 INFO  ConsoleApp:607 - Reading file: Counts
